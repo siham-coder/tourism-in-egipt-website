@@ -1,0 +1,288 @@
+/* header */
+body {
+    overflow-x: hidden;
+}
+.main-header {
+    display: flex;
+    max-height: 100vh;
+}
+.header-content {
+    margin-left: 50px;
+}
+.main-header .header-slider {
+    flex:2;
+    background-image: url('../imgs/bg-img1.jpg');
+    background-size: cover;
+}
+.main-header .header-content {
+    flex:3;
+}
+.main-header .header-content,
+.main-header .header-slider {
+    height: 100vh;
+}
+.header-content .main-nav {
+    padding: 20px 0;
+}
+.header-content .main-nav a{
+    font-size: 1.1rem;
+}
+.header-content .main-nav li:last-child{
+    margin-left:10%;
+    width: 214px;
+}
+.hidden {
+    display: none;
+}
+@media (max-width:767px) {
+    .header-content .main-nav li:not(:last-child){
+        display: none;
+    }
+    .header-content .main-nav {
+        float: right;
+    }
+    .hidden {
+        display: inline-block;
+    }
+}
+.small-images {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.small-images .img-wrapper {
+    flex: 1;
+}
+
+/* guides section */
+.home-guides-section {
+    padding:100px 0;
+}
+.home-guides-section .guide {
+    padding: 20px;
+}
+.home-guides-section .guide .title {
+    padding-top: 20px;
+}
+.home-guides-section .guide .title h5 {
+    font-weight: bold;
+}
+.home-guides-section .guide .title span {
+    font-size: 1rem;
+}
+.home-guides-section .guide p {
+    margin: 20px 0 30px;
+    width: 80%;
+}
+.home-guides-section .guide-photo img {
+    width: 100px;
+    height: 100px;
+}
+.home-guides-section .guide-photo {
+    padding-left: 0;
+}
+.home-guides-section .guide .details span {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 0.7rem;
+    color: #525251;
+    padding-top: 10px;
+}
+.home-guides-section .guide .details button {
+    margin-left: 10%;
+}
+.header-content .content {
+    margin: 10% 0;
+}
+.header-content .content h1 {
+    padding-bottom: 5%;
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.main-header {
+    overflow: hidden;
+}
+.header-content .content h1,
+.header-content .content p {
+    width: 90%;
+}
+@media (max-width:1083px) {
+    .home-guides-section .guide .details li {
+        font-size: 1rem !important;
+    }
+}
+.start {
+    padding: 50px 0;
+}
+
+/* explore with us */
+.home-explore-section {
+    padding:120px 0;
+}
+.home-explore-section .btn-custumize,
+.home-guides-section .guide .details button,
+.header-content .main-nav li:last-child {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    text-transform: uppercase;
+}
+.home-explore-section .row > div:first-child {
+    padding-top: 20px;
+}
+.home-explore-section .btn-custumize:hover,
+.home-guides-section .guide .details button:hover {
+    color: white;
+}
+.home-explore-section .container .img-wrapper img {
+    width: 60%;
+    height: 80%;
+    text-align: center;
+}
+.home-explore-section .container .img-wrapper .play-icon {
+    position: absolute;
+    width: 72px !important;
+    height: 72px;
+    bottom: 64px;
+    right: 215px;
+}
+@media (max-width:1199px) {
+    .home-explore-section .container .img-wrapper img {
+        width: 70%;
+    }
+    .home-explore-section .container .img-wrapper .play-icon {
+        bottom: 66px;
+        right: 172px;
+    }
+}
+.home-explore-section h3 {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.home-explore-section p {
+    margin: 25px 0 30px;
+}
+p:hover {
+    cursor: url('../imgs/cursor.png'), default;
+}
+@media (max-width:767px) {
+    .main-header .header-content .main-nav {
+        position: fixed;
+        right:0;
+        top: 0;
+    }
+    .home-explore-section .container .img-wrapper img {
+        width: 80%;
+        height: 100%;
+    }
+    .home-explore-section .container .img-wrapper .play-icon {
+        bottom: 9px !important;
+        right: 86px !important;
+    }
+    .header-content .content h1 {
+        padding-bottom: 5%;
+        font-weight: bold;
+        font-size: 2rem;
+        color: var(--main-color);
+    }
+}
+@media (max-width:575px) {
+    .home-explore-section .container .img-wrapper img {
+        width: 200px !important;
+        height: 200px;
+    }
+    .home-explore-section .container .img-wrapper .play-icon {
+        width: 50px !important;
+        height: 50px;
+        bottom: 3px !important;
+        right: 221px !important;
+    }
+}
+@media (max-width:500px) {
+    .home-explore-section .container .img-wrapper img {
+        width: 200px !important;
+        height: 200px;
+    }
+    .home-explore-section .container .img-wrapper .play-icon {
+        width: 50px !important;
+        height: 50px;
+        bottom: 3px !important;
+        right: 203px !important;
+    }
+}
+@media (max-width:375px) {
+    .home-explore-section .container .img-wrapper img {
+        width: 200px !important;
+        height: 200px;
+    }
+    .home-explore-section .container .img-wrapper .play-icon {
+        width: 50px !important;
+        height: 50px;
+        bottom: 3px !important;
+        right: 145px !important;
+    }
+    .header-content {
+        margin-left: 0;
+    }
+    .header-content h1,
+    .header-content p {
+        width: 80%;
+    }
+}
+
+/* footer */
+.footer {
+    padding-top:100px;
+    color: #fff;
+    background-color: var(--main-color);
+}
+.footer .last {
+    margin-top:50px;
+    padding:20px 0;
+    font-size: 0.9rem
+}
+.footer h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer p {
+    color: white;
+    margin-top:20px;
+    width:90%;
+}
+.footer span {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.footer ul li {
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+.footer ul li:hover {
+    cursor: pointer;
+    color: #ffeb3b;
+}
+@media (max-width:991px){
+    .footer .row > *:not(:nth-child(2)) {
+        margin-bottom: 20px;
+    }
+    .home-explore-section .row div:not(:last-child) {
+        margin-bottom: 60px;
+    }
+    .home-explore-section .container .img-wrapper img {
+        width: 100%;
+    }
+    .home-explore-section .container .img-wrapper {
+        margin:0 auto;
+        margin-top: 50px;
+    }
+    .home-explore-section {
+        padding-bottom:80px;
+    }
+    .home-explore-section .container .img-wrapper .play-icon {
+        bottom: 69px;
+        right: 118px;
+    }
+}
